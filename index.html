@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOVUS CONNECT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+        .image {
+            display: block;
+            width: 400px;
+            height: 500px;
+}
+        .overlay {
+            position: absolute; 
+            bottom: 0; 
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5); 
+            color: #f1f1f1; 
+            width: 100%;
+            transition: .5s ease;
+            opacity:1;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+}
+.logoimg{
+    height: 50px;
+    width: 250px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+        .containeritem{
+        background-image: url(images/home-banner.jpg);
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .rowitem{
+        width: 500px;
+        padding-top: 150px;
+        margin-left: 150px;
+        color: white;
+        font-size: 20px;
+      }
+      .rowitem button{
+        background-color: orange;
+        width: 150px;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 10px;
+      }
+      nav{
+         background-color: whitesmoke; 
+         
+
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            padding: 20px;
+            float: right;
+            display: block;         
+            font-size: 16px;
+            text-align: center;
+
+        }
+        
+        
+        .contact{
+            background-color: orange;
+            border-radius: 10px;
+            height: 50px;
+            padding: 20px;
+           padding-top: 10px;
+            margin-top: 10px;
+        }
+       .dropdown{
+        color: black;
+        float: right;
+       }
+       .dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 20px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+  
+}
+    
+
+
+nav a:hover, .dropdown:hover .dropbtn {
+    color: orange;
+}
+
+.contact:hover {
+  background-color: white;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+  padding: 0px;
+  background-color: whitesmoke;
+  height: 600px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+        .icon
+        {
+        
+            margin-right: 10px;
+        }
+        .first{
+            display: flex;
+            text-align: center;
+padding: 10px 90px;
+        }
+        .inner{
+            
+            padding: 35px;
+            margin: 25px;
+            
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .second{
+            padding-left: 100px;
+            display: flex;
+            text-align: center;
+padding: 40px 120px;
+            background-color: #e9f8ef;
+        }
+        .second img{
+            width: 500px;
+            height: 570px;
+        }
+        .inner2{
+            width: 500px;
+            height: 500px
+
+        }  
+        .inner3{
+            width: 500px;
+            height: 500px;
+            padding: 10px;
+            text-align: left;
+            margin-top: 120px;
+            font-size: larger;
+        }
+        .hexa{
+          background-color: white;
+          height: 500px;
+          width: 100%;
+          margin: 50px;
+
+        }  
+        .hexa button {
+                z-index: 1;
+               
+                padding: 0px;
+                position: relative;
+                width: 130px;
+                height: 100px;
+                color: black;
+                justify-content: center;
+                align-items: center;
+                opacity:0.8;
+            
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                }
+                .hexa button:hover{
+                    opacity:5.0;
+                }
+                .hexabox1{
+                    margin-left: 250px;
+                    padding-left: 100px;
+
+
+                }
+                .hexabox2{
+                     
+                   margin-left: 150px;
+                   padding: 0px;
+                }
+                .hexabox3{
+                    margin-left: 150px;
+                    margin-top: -40px;
+                }
+                .hexabox4{
+                    margin-left: 350px;
+                    
+                }
+                .btn1{
+                    margin-left:10px;
+                    margin-top: 0px;
+                    margin-bottom: -40px;
+                }
+                .btn2{
+                    margin-left: 300px;
+                    margin-bottom: -40px;
+
+                }
+                .btn3{
+                    margin-left: -15px;
+                    margin-top: 40px;
+                }
+                .btn4{
+                   
+                    margin-left: -20px;
+                    margin-bottom: 50px;
+                }
+                .btn5 , .btn7, .btn9, .btn11{
+                    margin-left: -20px;
+                    margin-top: 50px;
+                }
+                .btn6, .btn8, .btn10{
+                    margin-left: -30px;
+                    margin-top: -70px;
+                }
+                .btn12{
+                    margin-left: 10px;
+                    margin-top: 10px;
+                }
+                .btn13 {
+                     margin-left: -20px;
+                    margin-top: -90px;
+                }
+                .btn14 {
+                    margin-left: 80px;
+                    margin-top: -90px;
+                    
+                }
+                .btn15{
+                    margin-left: 90px;
+                    margin-top: -90px; 
+                }
+                
+ table td:hover {
+    background-color: rgba(0,0,0,.075);
+}
+
+table tr img{
+    width: 100%;
+    height: 70px;
+    opacity:0.3;
+    margin: 0px;
+     align-items: center;
+}
+table tr img:hover{
+    opacity:2.5;
+
+}
+
+footer{
+  background-color: rgb(36, 36, 129);
+  color: white;
+  font-size: medium;
+  
+}
+footer a{
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+}
+footer a:hover{
+  color: white;
+  opacity: 2.0;
+  
+}
+    
+    </style>
+    </head>
+    <body>
+      <nav class=" navbar-right fixed-top">
+
+    <img src="images/logo.png" class="logoimg">
+    <a href=" " class="contact"><i class="fa fa-phone icon" style="font-size:25px"></i>  +919166544557</a>
+    <a href=" ">Contact us</a>
+    <a href=" ">About us</a>
+      <div class="dropdown">
+        <button class="dropbtn">Products 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+      
+          <div class="row">
+            <div class="column">
+                Contact Center Solution
+                <hr>
+              <h3>iCallMate-cCP</h3>
+              <a href="#">Inbound</a>
+              <a href="#">Outbound</a>
+              <a href="#">IVR</a>
+              <a href="#">ACD</a>
+              <a href="#">CRM</a>
+              <a href="#">API's</a>
+            </div>
+            <div class="column">
+              CPaaS Voice
+              <hr>
+            <h3>iCallMate-eCP</h3>
+            <a href="#">OBD</a>
+            <a href="#">IVR</a>
+            <a href="#">Missed call service</a>
+            <a href="#">Click2Call</a>
+            <a href="#">Text to speech</a>
+            <a href="#">Speech recognition</a>
+            <a href="#">API's</a>
+          </div>
+          <div class="column">
+              CPaaS SMS
+              <hr>
+            <h3>iSMSMate-sCP</h3>
+            <a href="#">Bulk SMS</a>
+            <a href="#">2 way SMS</a>
+            <a href="#">Smart link</a>
+            <a href="#">API's</a>
+          </div>
+          <div class="column">
+              Unified Communication
+              <hr>
+            <h3>iUnifyMate-uCP</h3>
+            <a href="#">Contact Center solution</a>
+            <a href="#">Social Media</a>
+            <a href="#">E-Mail</a>
+            <a href="#">Ticketing System</a>
+            <a href="#">Unifield/Omnichannel Agent</a>
+            <a href="#">API's</a>
+            </div>
+            <div class="column">
+              Cloud Contact Center
+              <hr>
+              <h3>Cloud Contact Center</h3>
+              <a href="#">Contact Center solution</a>
+              <a href="#">API's</a>
+            </div>
+            <div class="column">
+              CPaaS Whatsapp
+              <hr>
+              <h3>CPaaS Whatsapp</h3>
+              <a href="#">ChatBot</a>
+              <a href="#">API's</a>
+              <a href="#">Tracking Solution</a>
+              <hr>
+              <h4 style="color: blue;">iTrackMate</h4>
+              <a href="#">API's</a>
+            </div>
+            </div>
+            </div>
+        
+          </nav>
+<div class="containeritem">
+    <div class="rowitem">
+      <h1>We innovate to simplify</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cumque
+      fugiat quod molestias eveniet tempora id nam maiores nulla placeat
+      pariatur, ex odio. Fugiat dolorum architecto odit, provident asperiores
+      quis.
+    </p>
+    <button class="btn btn-light">Learn More <i class="fa-solid fa-arrow-right" style="font-size: 20px;"></i></button>
+    
+</div>
+  </div>
+  <div class="container">
+    <div class="text-center p-5 m-5">
+        <h4 style="color: #4d26d9;">Why choose us.</h4>
+        <h1>We're Better. Here's Why…</h1>
+        <p>Novus Connect believes that communication does not have to be as <br>
+          complex as it is. It is mainly working on its versatility, with whom they can<br>
+           satisfy their customers and highly flexible in accomplishing their targets.</p>
+  </div>
+  </div>
+<div class="first">
+    <div class="inner">
+        <i class="fa fa-lightbulb-o" style="font-size:40px; color:#f50a2d"></i>
+        <h2>Innovation</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur in rem vel nesciunt modi. Non maxime itaque illo temporibus distinctio velit error, voluptatem veniam fugit eaque nisi recusandae, blanditiis molestiae?</p>
+    </div>
+    <div class="inner">
+        <i class="fa fa-thumbs-up" style="font-size:40px; color: #4d26d9;"></i>
+
+        <h2>Satisfication</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur in rem vel nesciunt modi. Non maxime itaque illo temporibus distinctio velit error, voluptatem veniam fugit eaque nisi recusandae, blanditiis molestiae?</p>
+    </div>
+    <div class="inner">
+        <i class="fa fa-flag-o" style="font-size:40px; color: #2eb830;"></i>
+        <h2>Leader in the domain</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur in rem vel nesciunt modi. Non maxime itaque illo temporibus distinctio velit error, voluptatem veniam fugit eaque nisi recusandae, blanditiis molestiae?</p>
+    </div>
+
+</div>
+<div class=" container second ">
+    <div class="row inner2">
+        <img src="images/solutions.png">
+    </div>
+    <div class="inner3">
+        <h1>The Ultimate intercommunication solution</h1>
+            <p>It helps you to optimize your sales process, Run Marketing campaigns, free and open source framework for building communications applications. It automate their responses to their customers and make it a personalized experience.</p>
+    </div>
+</div>
+<div class="container p-5">
+   
+      <div class="mx-auto  text-center p-3" style="width:550px">
+        <h4 class="" style="color: #4d26d9;">Products</h4>
+        <h1>We never forget you have a voice</h1>
+        <p>Novus connect provides interactive and conversational voice services. It provides the software and hardware to convert existing Pc(s) into efficient Voice logger, interactive Voice Response (IVR) systems and Dialers, which mainly comprise of multi-channel contact solutions.</p>
+      </div>
+
+            
+ </div>
+
+ <div class="hexa">
+  <div class="hexabox1">
+      <button class="btn btn1" style="background-color: #b3ccff;"><i class="fa fa-robot" style="font-size:36px; color: #4d26d9;"></i><br>VoiceBot</button>
+    <button class="btn btn2" style="background-color: #80ffcc;"><i class="fa fa-dharmachakra"style="color: #33cc1e; font-size:36px"></i><br>Automation</button>
+  </div>
+  <div class="hexabox2">
+    <button class="btn btn3" style="background-color: #ffb3ff"><i class="fa fa-phone" style="font-size:36px; color: #e61961;"></i><br>Outbond</button>
+    <button class="btn btn4" style="background-color:  #ffff80;"><i class="fa fa-headphones" style="color: #FFD43B; font-size:36px;"></i><br>ACD</button>
+    <button class="btn btn5" style="background-color: #80ffcc;"><i class="fa-regular fa-address-card" style="color: #2eb830; font-size:36px;"></i><br>CRM</button>
+    <button class="btn btn6" style="background-color: #ffb3ff"><i class="fa fa-phone" style="color: #f50a2d; font-size:36px;" ></i><br>Missed<br>CALL</button>
+    <button class="btn btn7" style="background-color:  #ffff80;"> <i class="fa fa-envelope" style="font-size:36px; color: #FFD43B;"></i><br>Bulk SMS</button>
+    <button class="btn btn8" style="background-color: #ffb3ff"><i class="fa fa-microchip" style="font-size:36px; color: #e61961;"></i><br>Conversational<br>Ai</button>
+    <button class="btn btn9" style="background-color: #b3ccff;"><i class="fa fa-link" style="color: #4d26d9; font-size: 36px;"></i><br>Smart Link</button>
+    <button class="btn btn10" style="background-color:  #ffff80;"><i class="fa fa-globe" style="color: #FFD43B; font-size:36px;"></i><br>Social Media</button>
+    <button class="btn btn11" style="background-color: #b3ccff;"><i class="fa fa-envelope-open"  style="color: #4d26d9; font-size: 36px;"></i><br>E-Mail</button>
+ 
+  </div>
+   <div class="hexabox3">
+      <button class="btn btn3" style="background-color:  #ffff80;"><i class="fa fa-voicemail" style="color:#f1c913; font-size:36px;"></i><br>IVR</button>
+      <button class="btn btn4" style="background-color: #b3ccff;"><i class="fa fa-phone" style="color: #4d26d9; font-size:36px;"></i><br>Inbound</button>
+      <button class="btn btn5" style="background-color:  #ffff80;"><i class="fa fa-hand-point-up" style="color: #FFD43B; font-size:36px;"></i><br>Click2Call</button>
+      <button class="btn btn6" style="background-color: #80ffcc;"><i class="fa-regular fa-comment-dots" style="color: #4d26d9; font-size:36px;"></i><br>ChatBot</button>
+      <button class="btn btn7" style="background-color: #ffb3ff"><i class="fa-solid fa-volume-high" style="color: #e61961; font-size:36px;"></i><br>Speech recognition</button>
+      <button class="btn btn8" style="background-color: #80ffcc;"><i class="fa fa-comment" style="color: #42d62e; font-size: 36px;"></i><br>2 Way SMS</button>
+      <button class="btn btn9" style="background-color:  #ffff80;"><i class="fa fa-cog" style="font-size:26px; color: #FFD43B;"></i><br>API's</button>
+      <button class="btn btn10" style="background-color: #80ffcc;"><i class="fa fa-phone" style="color: #42d62e; font-size:36px;"></i><br>OBD</button>
+      <button class="btn btn11" style="background-color:  #ffff80;"><i class="fa fa-list" style="font-size:26px; color: #FFD43B;"></i><br>Ticketing</button>
+ 
+   </div> 
+   <div class="hexabox4">
+      <button class="btn btn12" style="background-color: #b3ccff;"><i class="fa fa-whatsapp" style="color: #4d26d9; font-size:36px;"></i><br>WhastApp</button>
+      <button class="btn btn13" style="background-color: #80ffcc;"><i class="fa fa-microphone" style="color: #07f25a; font-size:36px;"></i><br>Text to speech</button>
+      <button class="btn btn14" style="background-color: #b3ccff;"><i class="fa fa-cog" style="font-size:36px; color: #4d26d9;"></i><br>Conversational APIs</button>
+      <button class="btn btn15" style="background-color: #ffb3ff"><i class="fa-regular fa-id-badge" style="font-size:36px; color: #e61961"></i><br>Unified agent</button>
+      
+ 
+   </div>
+ </div>
+
+    <div class="container mx-auto text-center"  >
+      <h4 class="text-info">They Trust us</h4>
+          <h1>Our Prestigious Clients</h1>
+</div>
+<div class="container mx-auto text-center col-lg-2" style="width:700px;">
+<table class="table  table-bordered">
+<tbody>
+  <tr>
+                      <td><img src="table photos/a.png"></td>
+                    <td><img src="table photos/b.png"></td>
+                    <td><img src="table photos/c.png"></td>
+                    <td><img src="table photos/d.png"></td>
+                  </tr>
+                <tr>
+                  <td><img src="table photos/e.png"></td>
+                  <td><img src="table photos/f.png"></td>
+                  <td><img src="table photos/g.png"></td>
+                  <td><img src="table photos/h.png"></td>
+                </tr>
+                <tr>
+                  <td><img src="table photos/i.png"></td>
+                  <td><img src="table photos/j.png"></td>
+                  <td><img src="table photos/k.png"></td>
+                  <td><img src="table photos/l.png"></td>
+                </tr>
+                <tr>
+                   <td><img src="table photos/m.png"></td>
+                  <td><img src="table photos/n.png"></td>
+                  <td><img src="table photos/o.png"></td>
+                  <td><img src="table photos/p.png"></td>
+                </tr>
+                <tr>
+                   <td><img src="table photos/q.png"></td>
+                  <td><img src="table photos/r.png"></td>
+                  <td><img src="table photos/s.png"></td>
+                  <td><img src="table photos/t.png"></td>
+                </tr>
+              </tbody>
+            
+            </table>
+          </div>
+  </div>
+
+
+  <footer>
+    <div class=" p-1" >
+      <div class="row p-5" style="background-color: ;">
+        <div class="col-lg-2 pt-2" >
+        <h4>Products</h4>
+          <p><a href="#">Contact Center Solution</a></p>
+          <p><a href="#">CPaaS Voice</a></p> 
+          <p><a href="#">CPaaS SMS</a></p>
+          <p><a href="#">United Communication Platform</a></p>
+        </div>
+          <div class=" col-lg-2 pt-5">
+            <p><a href="#">Tracking Solution</a></p>
+            <p><a href="#">CPaaS Whatsapp</a></p>
+            <p><a href="#">Cloud Contact Center</a></p>
+          </div>
+          <div class="col-lg-3 pt-3">
+            <h4>Quick Links</h4>
+            <p><a href="#">Home</a></p>
+            <p><a href="#">About us</a></p>
+            <p><a href="#">Careers</a></p>
+            <p><a href="#">Contack us</a></p>
+          </div>
+          <div class="col-lg-5 p-2">
+            <p><h5>Subscribe to our newletter</h5></p>
+            <p><h6>Monthly digest of what's new and exciting from us.</h6></p>
+            <p class="d-flex "><input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="width: 300px;">
+              <button type="submit" class="btn btn-primary m-2">Submit</button></p>
+          </div>
+          
+            
+         
+        </div>
+       
+        <hr>
+        
+        <div class="d-flex " >
+          <p class="col-lg-9"> 2022 Novus Connect. All rights reserved.</p>
+        
+       <p class="col-lg-3" style="float: right;">
+        <button class="btn btn-light m-1"><i class="fa-brands fa-square-twitter" style="font-size:20px;"></i></button>
+        <button class="btn btn-light m-1"><i class="fa-brands fa-instagram" style="font-size: 20px;"></i></button>
+        <button class="btn btn-light m-1"><i class="fa-brands fa-facebook" style="font-size: 20px;"></i></button>
+       </p>
+       
+        </div>
+      </div>
+
+    </footer>
+        
+    </body>
